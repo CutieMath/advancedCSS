@@ -59,6 +59,7 @@ body {
     
     /* fix the shakey problem */
     backface-visibility: hidden;
+    margin-bottom: 50px;
 }
 
 .heading-primary-main {
@@ -112,4 +113,30 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 2px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #22272B;
+
 }
