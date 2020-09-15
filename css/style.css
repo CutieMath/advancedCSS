@@ -30,23 +30,20 @@ body {
   /* use clip path */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* allow elements inside head to position relative to the header */
-  position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 2.8rem; }
-
-/* make the text box to center */
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  /* In relation to the element itself */
-  transform: translate(-50%, -50%); }
+  position: relative;
+  /* make the text box to center */ }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 2.8rem; }
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    /* In relation to the element itself */
+    transform: translate(-50%, -50%); }
 
 .heading-primary {
   color: #ffffff;
@@ -54,25 +51,23 @@ body {
   /* fix the shakey problem */
   backface-visibility: hidden;
   margin-bottom: 5rem; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: .8rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  /* animation-delay: 2s;
-    animation-iteration-count: 3; */ }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 1rem;
-  /* use easier expression */
-  animation: moveInRight 1s ease-in; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: .8rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    /* animation-delay: 2s;
+        animation-iteration-count: 3; */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    /* use easier expression */
+    animation: moveInRight 1s ease-in; }
 
 /* use key frames */
 @keyframes moveInLeft {
@@ -103,53 +98,46 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 1rem 4rem;
-  display: inline-block;
-  border-radius: .2rem;
-  transition: all .2s;
-  position: relative; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5); }
-
-.btn--white {
-  color: #ffffff;
-  background-color: #000000; }
-
-/* use pseudo element to make effects */
-/* make a new button behind the actual button */
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: .2rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  /* transition should be at the starting element */
-  transition: all .3s; }
-
-.btn--white::after {
-  background-color: #000000; }
-
-.btn:hover::after {
-  transform: scaleX(1.1) scaleY(1.1);
-  /* use opacity can achieve different effect */
-  /* opacity: 0; */ }
-
-/* animate the button */
-.btn--animated {
-  animation: moveInButtom .2s ease-in 1s;
-  animation-fill-mode: backwards; }
+.btn {
+  /* use pseudo element to make effects */
+  /* make a new button behind the actual button */
+  /* animate the button */ }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    display: inline-block;
+    border-radius: .2rem;
+    transition: all .2s;
+    position: relative; }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+  .btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5); }
+  .btn--white {
+    color: #ffffff;
+    background-color: #000000; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: .2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* transition should be at the starting element */
+    transition: all .3s; }
+  .btn--white::after {
+    background-color: #000000; }
+  .btn:hover::after {
+    transform: scaleX(1.1) scaleY(1.1);
+    /* use opacity can achieve different effect */
+    /* opacity: 0; */ }
+  .btn--animated {
+    animation: moveInButtom .2s ease-in 1s;
+    animation-fill-mode: backwards; }
