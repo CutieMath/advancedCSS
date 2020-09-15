@@ -13,7 +13,7 @@ Dark: #0F1112
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 /* set root fontsize */
@@ -28,6 +28,7 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color:#ffffff;
+    box-sizing: border-box;
 }
 
 
