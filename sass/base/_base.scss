@@ -1,0 +1,21 @@
+/******** Universal Selector ********/
+/* all other selectors have higher priority */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* set root fontsize */
+/* make 1rem 10px for easier calculation*/
+/* to avoid overwrite user's default font size setting, we translate 10px to 62.5%  */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* make all children inherit this property  */
+    box-sizing: border-box;
+}

@@ -1,0 +1,60 @@
+.btn {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 1rem 4rem;
+        display: inline-block;
+        border-radius: .2rem;
+        transition: all .2s;
+        position: relative;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-primary-dark,.5);
+
+        &::after{
+            transform: scaleX(1.1) scaleY(1.1);
+            /* use opacity can achieve different effect */
+            /* opacity: 0; */
+        }
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem .1rem rgba($color-primary-dark,.5);
+    }
+
+    &--white {
+        background-color: $color-primary-text;
+        color: $color-primary-dark;
+
+        &::after{
+            background-color: $color-primary-text;
+        }
+    }
+
+    /* use pseudo element to make effects */
+    /* make a new button behind the actual button */
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: .2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        /* transition should be at the starting element */
+        transition: all .3s;
+    }
+
+    /* animate the button */
+    &--animated {
+        animation: moveInButtom .2s ease-in 1s;
+        animation-fill-mode: backwards;
+    }
+}
