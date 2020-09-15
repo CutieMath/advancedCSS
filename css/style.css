@@ -126,7 +126,7 @@ body {
 @keyframes moveInButtom {
     0% {
         opacity: 0;
-        transform: translateY(5rem);
+        transform: translateY(1rem);
     }
     100% {
         opacity: 1;
@@ -189,7 +189,7 @@ body {
 }
 
 /* animate the button */
-/* .btn-animated {
-    animation: moveInButtom .5s ease-in .75s;
+.btn--animated {
+    animation: moveInButtom .2s ease-in 1s;
     animation-fill-mode: backwards;
-} */
+}
