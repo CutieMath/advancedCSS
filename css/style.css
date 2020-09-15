@@ -18,8 +18,9 @@ Dark: #0F1112
 
 /* set root fontsize */
 /* make 1rem 10px for easier calculation*/
+/* to avoid overwrite user's default font size setting, we translate 10px to 62.5%  */
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body {
