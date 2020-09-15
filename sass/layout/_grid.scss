@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: pink;
     margin: 0 auto;
 
     &:not(:last-child){
@@ -12,7 +11,6 @@
     // ^= means select the class that starts with col-
     // $= means end with a string
     [class^="col-"]{
-        background-color: grey;
         float: left;
         // gutter appends to the right
         &:not(:last-child) {
@@ -42,12 +40,7 @@
 
     .col-3-of-4 {
         width: calc(3 * ((100% - #{$gutter-horizontal} * 3) / 4) + 2 * #{$gutter-horizontal});
-       
-    }
-
-    
-
-    
+    }    
 }
 
 

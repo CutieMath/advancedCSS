@@ -5,6 +5,10 @@ body {
     color:$color-primary-text;
 }
 
+p, .heading-tertiary {
+    font-family: 'Abel', sans-serif;
+}
+
 .heading-primary {
     color:$color-primary-text;
     text-transform: uppercase; 
@@ -32,4 +36,21 @@ body {
         /* use easier expression */
         animation: moveInRight 1s ease-in;
     }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    display: inline-block;
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    margin-bottom: 2rem;
 }

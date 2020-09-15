@@ -27,15 +27,6 @@
         box-shadow: 0 .5rem .1rem rgba($color-primary-dark,.5);
     }
 
-    &--white {
-        background-color: $color-primary-text;
-        color: $color-primary-dark;
-
-        &::after{
-            background-color: $color-primary-text;
-        }
-    }
-
     /* use pseudo element to make effects */
     /* make a new button behind the actual button */
     &::after{
@@ -52,7 +43,25 @@
         transition: all .3s;
     }
 
-    /* animate the button */
+    &--white {
+        background-color: $color-primary-text;
+        color: $color-primary-dark;
+
+        &::after{
+            background-color: $color-primary-text;
+        }
+    }
+
+    &--black {
+        background-color: $color-primary-dark;
+        color: $color-primary-text;
+
+        &::after{
+            background-color: $color-primary-dark;
+        }
+    }
+
+    /* animate the button when start the page*/
     &--animated {
         animation: moveInButtom .2s ease-in 1s;
         animation-fill-mode: backwards;
