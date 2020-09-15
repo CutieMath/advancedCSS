@@ -7,6 +7,8 @@
         box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, .8);
         border-radius: 2px;
         position: absolute;
+        z-index: 10;
+        transition: all .2s;
         
         &--p1 {
             left: 0;
@@ -21,6 +23,12 @@
         &--p3 {
             top: 15rem;
             left: 10%;
+        }
+
+        &:hover {
+            transform: scale(1.5);
+            box-shadow: 0 2.5rem 4rem rgba($color-primary-dark, .8);
+            z-index: 20;
         }
     }
 }
