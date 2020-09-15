@@ -16,10 +16,15 @@ Dark: #0F1112
     box-sizing: border-box;
 }
 
+/* set root fontsize */
+/* make 1rem 10px for easier calculation*/
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.7;
     color:#ffffff;
 }
@@ -39,12 +44,12 @@ body {
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 28px;
+    height: 2.8rem;
 }
 
 /* make the text box to center */
@@ -61,14 +66,14 @@ body {
     text-transform: uppercase; 
     /* fix the shakey problem */
     backface-visibility: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .heading-primary-main {
     display: block;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 8px;
+    letter-spacing: .8rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -78,9 +83,9 @@ body {
 
 .heading-primary-sub {
     display: block;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: 10px;
+    letter-spacing: 1rem;
     /* use easier expression */
     animation: moveInRight 1s ease-in;
 }
@@ -89,10 +94,10 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
     100% {
         opacity: 1;
@@ -103,10 +108,10 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
     100% {
         opacity: 1;
@@ -117,7 +122,7 @@ body {
 @keyframes moveInButtom {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(5rem);
     }
     100% {
         opacity: 1;
@@ -129,21 +134,22 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 40px;
+    font-size: 2rem;
+    padding: 1rem 4rem;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: .2rem;
     transition: all .2s;
     position: relative;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
 }
 
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem .1rem rgba(0,0,0,.5);
 }
 
 .btn-white {
@@ -159,7 +165,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 2px;
+    border-radius: .2rem;
     position: absolute;
     top: 0;
     left: 0;
