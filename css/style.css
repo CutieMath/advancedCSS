@@ -114,12 +114,18 @@ body {
   .btn:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+    .btn:hover::after {
+      transform: scaleX(1.1) scaleY(1.1);
+      /* use opacity can achieve different effect */
+      /* opacity: 0; */ }
   .btn:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5); }
   .btn--white {
-    color: #ffffff;
-    background-color: #000000; }
+    background-color: #ffffff;
+    color: #000000; }
+    .btn--white::after {
+      background-color: #ffffff; }
   .btn::after {
     content: "";
     display: inline-block;
@@ -132,12 +138,6 @@ body {
     z-index: -1;
     /* transition should be at the starting element */
     transition: all .3s; }
-  .btn--white::after {
-    background-color: #000000; }
-  .btn:hover::after {
-    transform: scaleX(1.1) scaleY(1.1);
-    /* use opacity can achieve different effect */
-    /* opacity: 0; */ }
   .btn--animated {
     animation: moveInButtom .2s ease-in 1s;
     animation-fill-mode: backwards; }
