@@ -1,195 +1,155 @@
-/*
-COLORS:
-
-Light: #FFFFFF
-Medium: #22272B
-Dark: #0F1112
-
-*/
-
-
 /******** Universal Selector ********/
 /* all other selectors have higher priority */
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
 /* set root fontsize */
 /* make 1rem 10px for easier calculation*/
 /* to avoid overwrite user's default font size setting, we translate 10px to 62.5%  */
 html {
-    font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color:#ffffff;
-    /* make all children inherit this property  */
-    box-sizing: border-box;
-}
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #ffffff;
+  /* make all children inherit this property  */
+  box-sizing: border-box; }
 
 /******** Header ********/
 .header {
-    height: 95vh;
-    background-image: url(../img/header-background.jpg);
-    background-size: cover;
-    background-position: top;
-    /* use clip path */
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    /* allow elements inside head to position relative to the header */
-    position: relative;
-}
+  height: 95vh;
+  background-image: url(../img/header-background.jpg);
+  background-size: cover;
+  background-position: top;
+  /* use clip path */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* allow elements inside head to position relative to the header */
+  position: relative; }
 
 .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
+  position: absolute;
+  top: 4rem;
+  left: 4rem; }
 
 .header__logo {
-    height: 2.8rem;
-}
+  height: 2.8rem; }
 
 /* make the text box to center */
 .header__text-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    /* In relation to the element itself */
-    transform: translate(-50%, -50%);
-}
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  /* In relation to the element itself */
+  transform: translate(-50%, -50%); }
 
 .heading-primary {
-    color: #fff;
-    text-transform: uppercase; 
-    /* fix the shakey problem */
-    backface-visibility: hidden;
-    margin-bottom: 5rem;
-}
+  color: #ffffff;
+  text-transform: uppercase;
+  /* fix the shakey problem */
+  backface-visibility: hidden;
+  margin-bottom: 5rem; }
 
 .heading-primary--main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: .8rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    /* animation-delay: 2s;
-    animation-iteration-count: 3; */
-}
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: .8rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  /* animation-delay: 2s;
+    animation-iteration-count: 3; */ }
 
 .heading-primary--sub {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 1rem;
-    /* use easier expression */
-    animation: moveInRight 1s ease-in;
-}
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  /* use easier expression */
+  animation: moveInRight 1s ease-in; }
 
 /* use key frames */
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-    80% {
-        transform: translateX(1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-    80% {
-        transform: translateX(-1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 @keyframes moveInButtom {
-    0% {
-        opacity: 0;
-        transform: translateY(1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 2rem;
-    padding: 1rem 4rem;
-    display: inline-block;
-    border-radius: .2rem;
-    transition: all .2s;
-    position: relative;
-}
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border-radius: .2rem;
+  transition: all .2s;
+  position: relative; }
 
 .btn:hover {
-    transform: translateY(-.3rem);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
-}
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
 
 .btn:active {
-    transform: translateY(-.1rem);
-    box-shadow: 0 .5rem .1rem rgba(0,0,0,.5);
-}
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5); }
 
 .btn--white {
-    background-color: #ffffff;
-    color: #22272B;
-
-}
+  color: #ffffff;
+  background-color: #000000; }
 
 /* use pseudo element to make effects */
 /* make a new button behind the actual button */
-.btn::after{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: .2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    /* transition should be at the starting element */
-    transition: all .3s;
-}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: .2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* transition should be at the starting element */
+  transition: all .3s; }
 
-.btn--white::after{
-    background-color: #ffffff;
-}
+.btn--white::after {
+  background-color: #000000; }
 
-.btn:hover::after{
-    transform: scaleX(1.1) scaleY(1.1);
-    /* use opacity can achieve different effect */
-    /* opacity: 0; */
-}
+.btn:hover::after {
+  transform: scaleX(1.1) scaleY(1.1);
+  /* use opacity can achieve different effect */
+  /* opacity: 0; */ }
 
 /* animate the button */
 .btn--animated {
-    animation: moveInButtom .2s ease-in 1s;
-    animation-fill-mode: backwards;
-}
+  animation: moveInButtom .2s ease-in 1s;
+  animation-fill-mode: backwards; }
