@@ -44,7 +44,8 @@ html {
 
 body {
   /* make all children inherit this property  */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: black; }
 
 body {
   font-family: 'Bebas Neue', sans-serif;
@@ -253,6 +254,6 @@ p, .heading-tertiary {
   padding: 30rem 0;
   background-image: url(../img/featureImg.jpg);
   background-size: cover;
-  margin-top: -25rem;
+  margin-top: -15rem;
   height: 100vh;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); }
