@@ -110,6 +110,51 @@ p, .heading-tertiary {
   margin-top: 4rem;
   margin-bottom: 4rem; }
 
+.card {
+  perspective: 140rem;
+  -moz-perspective: 140rem;
+  position: relative;
+  height: 55rem; }
+  .card__side {
+    color: black;
+    height: 55rem;
+    width: 100%;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px; }
+    .card__side--front-1 {
+      background-image: url(../img/1.png);
+      background-size: cover; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: url(../img/falcon9.png);
+        background-size: cover; }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 13rem;
+    left: 12.5rem; }
+  .card__details {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 25rem;
+    left: 3.5rem; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -227,6 +272,7 @@ p, .heading-tertiary {
   background-size: cover;
   background-position: top;
   /* use clip path */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* allow elements inside head to position relative to the header */
   position: relative;
@@ -245,7 +291,6 @@ p, .heading-tertiary {
     transform: translate(-50%, -50%); }
 
 .section-about {
-  background-color: black;
   padding: 25rem 5rem;
   margin-top: -20vh;
   color: white; }
@@ -257,3 +302,6 @@ p, .heading-tertiary {
   margin-top: -15rem;
   height: 100vh;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); }
+
+.section-rockets {
+  padding: 5rem 0 50rem 0; }

@@ -1,0 +1,72 @@
+.card {
+
+    // FUNCTIONALITY
+    perspective: 140rem;
+    -moz-perspective: 140rem;
+    position: relative;
+    height: 55rem;
+
+    &__side {
+        color: black;
+        height: 55rem;
+        width: 100%;
+        transition: all .8s ease;
+        position: absolute;
+        top:0;
+        left: 0;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        //box-shadow: 0 1.5rem 4rem rgba(pink, .15);
+
+        &--front{
+            
+            &-1{
+                background-image: url(../img/1.png);
+                background-size: cover;
+            }
+
+        }
+
+
+        &--back{
+            // backside start from being back
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image: url(../img/falcon9.png);
+                background-size: cover;
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // FRONT SIDE TEXT
+    &__heading {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 13rem;
+        left: 12.5rem;
+    }
+
+    &__details {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        top: 25rem;
+        left: 3.5rem;
+    }
+    
+}

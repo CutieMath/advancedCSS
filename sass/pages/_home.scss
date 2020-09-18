@@ -1,5 +1,4 @@
 .section-about {
-    background-color: black;
     padding: 25rem 5rem;
     margin-top: -20vh;
     color: white;
@@ -19,4 +18,8 @@
     // & > * {
     //     transform: skewY(7deg);
     // }
+}
+
+.section-rockets {
+    padding: 5rem 0 50rem 0;
 }

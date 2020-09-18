@@ -4,6 +4,8 @@
     background-size: cover;
     background-position: top;
     /* use clip path */
+    // make sure it works on old browsers 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     /* allow elements inside head to position relative to the header */
     position: relative;
