@@ -2,4 +2,4 @@
 Learn advanced CSS and SASS by making a SpaceX fan page.  
 https://cutiemath.github.io/advancedCSS/   
   
-## All logos and images are from spacex.com
+** All logos and images are from spacex.com. **
