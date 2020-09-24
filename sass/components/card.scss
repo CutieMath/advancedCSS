@@ -25,6 +25,16 @@
                 background-size: cover;
             }
 
+            &-2{
+                background-image: url(../img/falconHeaveySketch.png);
+                background-size: cover;
+            }
+
+            &-3{
+                background-image: url(../img/starShipSketch.png);
+                background-size: cover;
+            }
+
         }
 
 
@@ -36,6 +46,18 @@
                 background-image: url(../img/falcon9.png);
                 background-size: cover;
             }
+
+            &-2{
+                background-image: url(../img/falconHeavey.png);
+                background-size: cover;
+            }
+
+            &-3{
+                background-image: url(../img/starShip.png);
+                background-size: cover;
+            }
+
+
         }
     }
 
@@ -49,13 +71,14 @@
 
     // FRONT SIDE TEXT
     &__heading {
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-transform: uppercase;
         color: white;
         position: absolute;
+        width: 80%;
         text-align: center;
-        top: 13rem;
-        left: 12.5rem;
+        top: 15rem;
+        left: 3.2rem; 
     }
 
     &__details {
@@ -66,7 +89,7 @@
         width: 80%;
         text-align: center;
         top: 25rem;
-        left: 3.5rem;
+        left: 3.2rem;        
     }
     
 }

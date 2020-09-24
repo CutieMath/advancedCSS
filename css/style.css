@@ -128,23 +128,36 @@ p, .heading-tertiary {
     .card__side--front-1 {
       background-image: url(../img/1.png);
       background-size: cover; }
+    .card__side--front-2 {
+      background-image: url(../img/falconHeaveySketch.png);
+      background-size: cover; }
+    .card__side--front-3 {
+      background-image: url(../img/starShipSketch.png);
+      background-size: cover; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: url(../img/falcon9.png);
+        background-size: cover; }
+      .card__side--back-2 {
+        background-image: url(../img/falconHeavey.png);
+        background-size: cover; }
+      .card__side--back-3 {
+        background-image: url(../img/starShip.png);
         background-size: cover; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: white;
     position: absolute;
+    width: 80%;
     text-align: center;
-    top: 13rem;
-    left: 12.5rem; }
+    top: 15rem;
+    left: 3.2rem; }
   .card__details {
     font-size: 2rem;
     text-transform: uppercase;
@@ -153,7 +166,7 @@ p, .heading-tertiary {
     width: 80%;
     text-align: center;
     top: 25rem;
-    left: 3.5rem; }
+    left: 3.2rem; }
 
 .composition {
   position: relative; }
@@ -297,7 +310,7 @@ p, .heading-tertiary {
 
 .section-features {
   padding: 30rem 0;
-  background-image: url(../img/featureImg.jpg);
+  background-image: url(../img/featureImg.png);
   background-size: cover;
   margin-top: -15rem;
   height: 100vh;
