@@ -389,3 +389,12 @@ p, .heading-tertiary {
 .section-stories {
   position: relative;
   padding: 5rem 0; }
+
+.section-book {
+  padding: 15rem 0; }
+
+.book {
+  background-image: linear-gradient(110deg, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.6) 50%), url(../img/book.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  height: 50rem; }
